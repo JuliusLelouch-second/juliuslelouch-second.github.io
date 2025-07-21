@@ -1,0 +1,106 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="spotLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.05" />
+    </radialGradient>
+    
+    <!-- Luxury pattern -->
+    <pattern id="luxuryPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="url(#darkGradient)"/>
+      
+      <!-- Geometric luxury elements -->
+      <g stroke="#475569" stroke-width="0.5" fill="none" opacity="0.3">
+        <!-- Diamond shape -->
+        <polygon points="30,10 40,20 30,30 20,20" />
+        <!-- Connecting lines -->
+        <line x1="0" y1="20" x2="20" y2="20"/>
+        <line x1="40" y1="20" x2="60" y2="20"/>
+        <line x1="30" y1="0" x2="30" y2="10"/>
+        <line x1="30" y1="30" x2="30" y2="60"/>
+      </g>
+      
+      <!-- Subtle dots for texture -->
+      <circle cx="15" cy="45" r="0.5" fill="#64748b" opacity="0.2"/>
+      <circle cx="45" cy="15" r="0.5" fill="#64748b" opacity="0.2"/>
+      
+      <!-- Corner accents -->
+      <g stroke="#cbd5e1" stroke-width="0.3" fill="none" opacity="0.15">
+        <path d="M5,5 L10,5 L10,10"/>
+        <path d="M55,5 L50,5 L50,10"/>
+        <path d="M5,55 L10,55 L10,50"/>
+        <path d="M55,55 L50,55 L50,50"/>
+      </g>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="300" height="300" fill="url(#luxuryPattern)"/>
+  <rect width="300" height="300" fill="url(#spotLight)"/>
+  
+  <!-- Premium consulting elements -->
+  <g fill="#64748b" opacity="0.2">
+    <!-- Executive briefcase -->
+    <rect x="50" y="80" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1"/>
+    <rect x="58" y="77" width="4" height="3" rx="1" fill="currentColor"/>
+    <line x1="52" y1="85" x2="68" y2="85" stroke="currentColor" stroke-width="0.5"/>
+    
+    <!-- Analytics chart -->
+    <g transform="translate(180,60)">
+      <rect width="24" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="0.8"/>
+      <rect x="3" y="12" width="2" height="3" fill="currentColor"/>
+      <rect x="7" y="9" width="2" height="6" fill="currentColor"/>
+      <rect x="11" y="6" width="2" height="9" fill="currentColor"/>
+      <rect x="15" y="10" width="2" height="5" fill="currentColor"/>
+      <rect x="19" y="4" width="2" height="11" fill="currentColor"/>
+    </g>
+    
+    <!-- Handshake (premium style) -->
+    <g transform="translate(120,150)">
+      <circle cx="0" cy="0" r="12" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="m-6,-6 12,12 m0,-12 -12,12" stroke="currentColor" stroke-width="1"/>
+      <!-- Decorative corners -->
+      <rect x="-15" y="-15" width="4" height="4" fill="none" stroke="currentColor" stroke-width="0.5" rx="0.5"/>
+      <rect x="11" y="11" width="4" height="4" fill="none" stroke="currentColor" stroke-width="0.5" rx="0.5"/>
+    </g>
+    
+    <!-- Strategy board -->
+    <g transform="translate(70,200)">
+      <rect width="30" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1"/>
+      <!-- Strategy elements -->
+      <circle cx="8" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="0.5"/>
+      <circle cx="22" cy="14" r="2" fill="none" stroke="currentColor" stroke-width="0.5"/>
+      <line x1="10" y1="6" x2="20" y2="14" stroke="currentColor" stroke-width="0.5"/>
+      <!-- Text lines -->
+      <line x1="3" y1="16" x2="12" y2="16" stroke="currentColor" stroke-width="0.3"/>
+      <line x1="15" y1="4" x2="27" y2="4" stroke="currentColor" stroke-width="0.3"/>
+    </g>
+    
+    <!-- Luxury pen -->
+    <g transform="translate(220,180)">
+      <line x1="0" y1="0" x2="16" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="2" cy="2" r="1.5" fill="none" stroke="currentColor" stroke-width="0.5"/>
+      <circle cx="14" cy="14" r="1" fill="currentColor"/>
+    </g>
+    
+    <!-- Network nodes -->
+    <g transform="translate(200,240)" opacity="0.4">
+      <circle cx="0" cy="0" r="1.5" fill="currentColor"/>
+      <circle cx="12" cy="-8" r="1.5" fill="currentColor"/>
+      <circle cx="20" cy="6" r="1.5" fill="currentColor"/>
+      <line x1="0" y1="0" x2="12" y2="-8" stroke="currentColor" stroke-width="0.5"/>
+      <line x1="12" y1="-8" x2="20" y2="6" stroke="currentColor" stroke-width="0.5"/>
+      <line x1="0" y1="0" x2="20" y2="6" stroke="currentColor" stroke-width="0.5"/>
+    </g>
+  </g>
+  
+  <!-- Subtle overlay texture -->
+  <rect width="300" height="300" fill="url(#darkGradient)" opacity="0.1"/>
+</svg>
