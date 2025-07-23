@@ -2957,9 +2957,6 @@ h1, h2, h3, h4, h5, h6 {
 .-right-10 {
   right: -2.5rem;
 }
-.-right-2 {
-  right: -0.5rem;
-}
 .-right-20 {
   right: -5rem;
 }
@@ -2968,9 +2965,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .-top-10 {
   top: -2.5rem;
-}
-.-top-2 {
-  top: -0.5rem;
 }
 .-top-20 {
   top: -5rem;
