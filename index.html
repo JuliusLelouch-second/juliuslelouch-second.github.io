@@ -74,7 +74,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         
     
-    <link rel="stylesheet" href="/css/main.min.f7996656a79207141a6d93f3ee3092d138df5ff00a32b8db62215a3c76555c6d.css">
+    <link rel="stylesheet" href="/css/main.min.3b11e5567b646b2237425256a706667b766b5f1d256761466d86be35864ccd68.css">
 
     
     
@@ -98,10 +98,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 <a href="/" class="flex items-center space-x-4">
                     
-                        <img src="/images/Logo%e7%9f%a2%e9%87%8f%e5%9b%be-2.svg" alt="CAREER ACCELERATOR" class="h-12">
+                        <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-12">
                     
                     
-                        <span class="text-3xl font-semibold text-gray-800">CAREER ACCELERATOR</span>
+                        <span class="text-xl font-semibold text-gray-800">CAREER ACCELERATOR</span>
                     
                 </a>
 
@@ -130,57 +130,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
 
                 
-                <div class="md:hidden">
-                    <label for="nav-toggle" class="p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 transition-colors cursor-pointer">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </label>
-                </div>
+                <label for="nav-toggle" class="md:hidden flex flex-col cursor-pointer">
+                    <span class="w-6 h-0.5 bg-gray-900 mb-1"></span>
+                    <span class="w-6 h-0.5 bg-gray-900 mb-1"></span>
+                    <span class="w-6 h-0.5 bg-gray-900"></span>
+                </label>
             </nav>
         </div>
+    </header>
 
-        
-        <div class="nav-content md:hidden w-full fixed left-0 right-0 top-20 bg-white border-t border-gray-100 shadow-lg">
-            <div class="w-full px-6 py-4">
+    
+    <div class="mobile-menu fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex flex-col h-full">
+            <div class="flex items-center justify-between p-4 border-b border-gray-200">
+                <a href="/" class="flex items-center space-x-2">
+                    
+                        <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-8">
+                    
+                </a>
+                <label for="nav-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="flex-1 py-6 overflow-y-auto">
                 
                     
-                    <a href="/careers" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Coaching</a>
+                    <a href="/careers" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Coaching</a>
                     
                 
                     
-                    <a href="/event" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Events</a>
+                    <a href="/event" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Events</a>
                     
                 
                     
-                    <a href="/community" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Community</a>
+                    <a href="/community" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Community</a>
                     
                 
                     
-                    <a href="/contact" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Contact us</a>
+                    <a href="/contact" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Contact us</a>
                     
-                
                 
                 
             </div>
         </div>
-    </header>
-
-    <style>
-        .mobile-menu-wrapper {
-            position: relative;
-        }
-        .nav-toggle {
-            display: none;
-        }
-        .nav-content {
-            display: none;
-        }
-        .nav-toggle:checked ~ header .nav-content {
-            display: block;
-        }
-    </style>
+    </div>
 </div>
+
+<style>
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ .mobile-menu {
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-wrapper {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+</style>
 
     </div>
 
@@ -209,34 +224,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </section>
 
-<section class="border-y border-gray-100 overflow-hidden">
+<section class="border-y border-gray-100 overflow-hidden bg-white">
     <div class="container mx-auto">
         <div class="py-12">
             <p class="text-center text-3xl md:text-2xl font-bold mb-6">我们的导师来自</p>
             <div class="logo-scroll">
                 <div class="logos-slide animate">
                     
-                    <img src="/images/logos/customer-1.png" class="h-20" alt="Customer 1" />
+                    <img src="/images/modified_logo/McKinsey-Logo_v2.png" class="h-15" alt="McKinsey &amp; Company" />
                     
-                    <img src="/images/logos/customer-2.png" class="h-20" alt="Customer 2" />
+                    <img src="/images/modified_logo/BCG_v2.png" class="h-15" alt="Boston Consulting Group" />
                     
-                    <img src="/images/logos/customer-3.png" class="h-20" alt="Customer 3" />
+                    <img src="/images/modified_logo/BAIN_20250724_210212_v2.png" class="h-15" alt="Bain &amp; Company" />
                     
-                    <img src="/images/logos/customer-4.png" class="h-20" alt="Customer 4" />
+                    <img src="/images/modified_logo/Deloitte-Logo_20250724_210212_v2.png" class="h-15" alt="Deloitte" />
                     
-                    <img src="/images/logos/customer-5.png" class="h-20" alt="Customer 5" />
+                    <img src="/images/modified_logo/PWC_v2.png" class="h-15" alt="PwC" />
+                    
+                    <img src="/images/modified_logo/EY%20LOGO_v2.png" class="h-15" alt="EY" />
+                    
+                    <img src="/images/modified_logo/kpmg-logo-1_v2.png" class="h-15" alt="KPMG" />
+                    
+                    <img src="/images/modified_logo/Oliver-Wyman-Logo_v2.png" class="h-15" alt="Oliver Wyman" />
+                    
+                    <img src="/images/modified_logo/LEK_v2.png" class="h-15" alt="L.E.K. Consulting" />
                     
                     
                         
-                        <img src="/images/logos/customer-1.png" class="h-20" alt="Customer 1" />
+                        <img src="/images/modified_logo/McKinsey-Logo_v2.png" class="h-15" alt="McKinsey &amp; Company" />
                         
-                        <img src="/images/logos/customer-2.png" class="h-20" alt="Customer 2" />
+                        <img src="/images/modified_logo/BCG_v2.png" class="h-15" alt="Boston Consulting Group" />
                         
-                        <img src="/images/logos/customer-3.png" class="h-20" alt="Customer 3" />
+                        <img src="/images/modified_logo/BAIN_20250724_210212_v2.png" class="h-15" alt="Bain &amp; Company" />
                         
-                        <img src="/images/logos/customer-4.png" class="h-20" alt="Customer 4" />
+                        <img src="/images/modified_logo/Deloitte-Logo_20250724_210212_v2.png" class="h-15" alt="Deloitte" />
                         
-                        <img src="/images/logos/customer-5.png" class="h-20" alt="Customer 5" />
+                        <img src="/images/modified_logo/PWC_v2.png" class="h-15" alt="PwC" />
+                        
+                        <img src="/images/modified_logo/EY%20LOGO_v2.png" class="h-15" alt="EY" />
+                        
+                        <img src="/images/modified_logo/kpmg-logo-1_v2.png" class="h-15" alt="KPMG" />
+                        
+                        <img src="/images/modified_logo/Oliver-Wyman-Logo_v2.png" class="h-15" alt="Oliver Wyman" />
+                        
+                        <img src="/images/modified_logo/LEK_v2.png" class="h-15" alt="L.E.K. Consulting" />
                         
                     
                 </div>
@@ -275,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 .logos-slide img {
-    max-height: 1.5rem;
+    max-height: 60px;  
     margin: 0 40px;
     display: inline-block;
     vertical-align: middle;
@@ -312,84 +343,97 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<section class="section">
+
+<div class="bg-blue-50">
+    <section class="section pt-16 pb-0">
+        <div class="container">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">创始人及公司介绍</h2>
+                <p class="text-xl text-gray-600">成为全球咨询人才首选的成长平台与终身网络枢纽</p>
+            </div>
+
+            
+            <div class="space-y-32">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-16">
     <div class="container">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">创始人及公司介绍</h2>
-            <p class="text-xl text-gray-600">成为全球咨询人才首选的成长平台与终身网络枢纽</p>
+        <div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #5573df">
+            
+            <div class="order-2 lg:order-1">
+                <img src="/images/person.png" alt="Career Accelerator" class="rounded-xl shadow-elevation">
+            </div>
+            
+
+            <div class="space-y-6 order-1 lg:order-2">
+                <style>
+                    .badge {
+                        background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
+                        color: var(--badge-color);
+                    }
+                    .badge-icon {
+                        color: var(--badge-color);
+                        width: 20px;
+                        height: 20px;
+                        min-width: 20px;
+                        min-height: 20px;
+                        flex-shrink: 0;
+                    }
+                </style>
+                
+                <h3 class="text-2xl md:text-3xl font-bold">Career Accelerator</h3>
+                <p class="text-lg text-gray-600">从精准的1对1职业导航，到前沿洞察的行业活动，再到自由联结的全球顾问网络，我们致力于打通咨询人才成长各环节，以深度链接为核心，加速每一个咨询梦想的达成。在这里，能力提升与人脉拓展同步实现。​加入我们，不只获得技能，更获得进入咨询精英圈的通行证。​​</p>
+                <ul class="space-y-4">
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>求职加速：1v1定制化辅导（校招/社招）拿下顶级Offer，导师均来自MBB、Tier2顶级咨询公司</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>顾问联盟：搭建自由专家网络，精准匹配企业需求与顶尖咨询人才</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>精英圈层：举办智库沙龙、深度酒会，推动高质量行业资源裂变与人脉链接</span>
+                    </li>
+                    
+                </ul>
+                <a href="#" class="btn-primary inline-block">Learn More</a>
+            </div>
+
+            
         </div>
-
-        
-        <div class="space-y-32">
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #5573df">
-    
-    <div class="order-2 lg:order-1">
-        <img src="/images/person.png" alt="Career Accelerator" class="rounded-xl shadow-elevation">
     </div>
-    
+</section>
 
-    <div class="space-y-6 order-1 lg:order-2">
-        <style>
-            .badge {
-                background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
-                color: var(--badge-color);
-            }
-            .badge-icon {
-                color: var(--badge-color);
-            }
-        </style>
-        <div class="badge inline-block px-4 py-2 rounded-full font-medium"></div>
-        <h3 class="text-2xl md:text-3xl font-bold">Career Accelerator</h3>
-        <p class="text-lg text-gray-600">从精准的1对1职业导航，到前沿洞察的行业活动，再到自由联结的全球顾问网络，我们致力于打通咨询人才成长各环节，以深度链接为核心，加速每一个咨询梦想的达成。在这里，能力提升与人脉拓展同步实现。​加入我们，不只获得技能，更获得进入咨询精英圈的通行证。​​</p>
-        <ul class="space-y-4">
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>求职加速：1v1定制化辅导（校招/社招）拿下顶级Offer，导师均来自MBB、Tier2顶级咨询公司</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>顾问联盟：搭建自由专家网络，精准匹配企业需求与顶尖咨询人才</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>精英圈层：举办智库沙龙、深度酒会，推动高质量行业资源裂变与人脉链接</span>
-            </li>
-            
-        </ul>
-        <a href="#" class="btn-primary inline-block">Learn More</a>
-    </div>
+
+
 
     
-</div>
-
-
-
-
-<section class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-    <div class="container mx-auto px-4">
+    <section class="py-16 pb-20">
+        <div class="container mx-auto px-4">
         
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -403,7 +447,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[800px] flex flex-col">
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[600px] flex flex-col">
                 <div class="text-center flex-1 flex flex-col justify-between">
                     
                     <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -417,7 +461,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                     
                     <p class="text-gray-600 mb-8">
-                        不只是辅导，更是加入圈子的钥匙。​​ 与目标公司资深导师1对1，修改简历、模拟面试、剖析offer，​更重要的是，获得行业"局内人"的引路与人脉起点。（95%成功率，3周获offer）
+                        不只是辅导，更是加入圈子的钥匙。​​ 与目标公司资深导师1对1，修改简历、模拟面试、剖析offer，​更重要的是，获得行业"局内人"的引路与人脉起点。
                     </p>
                     
                     
@@ -443,7 +487,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[800px] flex flex-col">
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[600px] flex flex-col">
                 <div class="text-center flex-1 flex flex-col justify-between">
                     
                     <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -457,13 +501,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                     
                     <p class="text-gray-600 mb-8">
-                        对话顶级公司顾问/行业专家，​一手解读赛道趋势、招聘偏好、生存法则。纯干货分享+ 高质量人脉碰撞，拒绝空泛理论！（5+月活动，500+参与者）
+                        对话顶级公司顾问/行业专家，​一手解读赛道趋势、招聘偏好、生存法则。纯干货分享+ 高质量人脉碰撞，拒绝空泛理论！
                     </p>
                     
                     
                     <div class="flex justify-center space-x-4 mb-8">
                         <div class="text-center">
-                            <div class="text-lg font-bold text-purple-600">20+</div>
+                            <div class="text-lg font-bold text-purple-600">5+</div>
                             <div class="text-xs text-gray-500">月活动</div>
                         </div>
                         <div class="text-center">
@@ -483,7 +527,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
             
-            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[800px] flex flex-col">
+            <div class="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[600px] flex flex-col">
                 <div class="text-center flex-1 flex flex-col justify-between">
                     
                     <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -498,13 +542,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     
                     
                     <p class="text-gray-600 mb-8">
-                        顾问解锁全球咨询项目机会，精准匹配高端咨询项目需求，对接全球优质客户（初创到500强）。需求方按需调用全球顶尖咨询顾问，省时省心，品质保障。（10K+成员，24/7在线）
+                        顾问解锁全球咨询项目机会，精准匹配高端咨询项目需求，对接全球优质客户（初创到500强）。需求方按需调用全球顶尖咨询顾问，省时省心，品质保障。
                     </p>
                     
                     
                     <div class="flex justify-center space-x-4 mb-8">
                         <div class="text-center">
-                            <div class="text-lg font-bold text-green-600">50K+</div>
+                            <div class="text-lg font-bold text-green-600">10K+</div>
                             <div class="text-xs text-gray-500">成员</div>
                         </div>
                         <div class="text-center">
@@ -547,7 +591,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </div>
-</section>
+    </section>
+</div>
+
 
 
 
@@ -564,139 +610,159 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #7c3aed">
-    
-    <div class="order-2 lg:order-1">
-        <img src="/images/feature-2.svg" alt="Beautiful Design System" class="rounded-xl shadow-elevation">
-    </div>
-    
 
-    <div class="space-y-6 order-1 lg:order-2">
-        <style>
-            .badge {
-                background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
-                color: var(--badge-color);
-            }
-            .badge-icon {
-                color: var(--badge-color);
-            }
-        </style>
-        <div class="badge inline-block px-4 py-2 rounded-full font-medium">Design</div>
-        <h3 class="text-2xl md:text-3xl font-bold">Beautiful Design System</h3>
-        <p class="text-lg text-gray-600">Create stunning user interfaces with our comprehensive design system built on TailwindCSS. Customize everything to match your brand.</p>
-        <ul class="space-y-4">
+<section class="py-16">
+    <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #7c3aed">
             
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Modern UI components</span>
-            </li>
+            <div class="order-2 lg:order-1">
+                <img src="/images/feature-2.svg" alt="Beautiful Design System" class="rounded-xl shadow-elevation">
+            </div>
             
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Responsive design</span>
-            </li>
+
+            <div class="space-y-6 order-1 lg:order-2">
+                <style>
+                    .badge {
+                        background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
+                        color: var(--badge-color);
+                    }
+                    .badge-icon {
+                        color: var(--badge-color);
+                        width: 20px;
+                        height: 20px;
+                        min-width: 20px;
+                        min-height: 20px;
+                        flex-shrink: 0;
+                    }
+                </style>
+                <div class="badge inline-block px-4 py-2 rounded-full font-medium">Design</div>
+                <h3 class="text-2xl md:text-3xl font-bold">Beautiful Design System</h3>
+                <p class="text-lg text-gray-600">Create stunning user interfaces with our comprehensive design system built on TailwindCSS. Customize everything to match your brand.</p>
+                <ul class="space-y-4">
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Modern UI components</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Responsive design</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Custom typography</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Flexible layouts</span>
+                    </li>
+                    
+                </ul>
+                <a href="/features/design-system/" class="btn-primary inline-block">Learn More</a>
+            </div>
+
             
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Custom typography</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Flexible layouts</span>
-            </li>
-            
-        </ul>
-        <a href="/features/design-system/" class="btn-primary inline-block">Learn More</a>
-    </div>
-
-    
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #16a34a">
-    
-
-    <div class="space-y-6 ">
-        <style>
-            .badge {
-                background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
-                color: var(--badge-color);
-            }
-            .badge-icon {
-                color: var(--badge-color);
-            }
-        </style>
-        <div class="badge inline-block px-4 py-2 rounded-full font-medium">Development</div>
-        <h3 class="text-2xl md:text-3xl font-bold">Developer Experience</h3>
-        <p class="text-lg text-gray-600">Enjoy a seamless development experience with hot reload, component-based architecture, and clean, maintainable code.</p>
-        <ul class="space-y-4">
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Component system</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Easy customization</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Clean code</span>
-            </li>
-            
-            <li class="flex items-center space-x-3">
-                <svg class="badge-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>Detailed documentation</span>
-            </li>
-            
-        </ul>
-        <a href="/features/developer-experience/" class="btn-primary inline-block">Learn More</a>
-    </div>
-
-    
-    <div>
-        <img src="/images/feature-3.svg" alt="Developer Experience" class="rounded-xl shadow-elevation">
-    </div>
-    
-</div>
-
-
-
-
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-16">
+    <div class="container">
+        <div class="grid lg:grid-cols-2 gap-12 items-center" style="--badge-color: #16a34a">
+            
+
+            <div class="space-y-6 ">
+                <style>
+                    .badge {
+                        background-color: color-mix(in srgb, var(--badge-color) 10%, transparent);
+                        color: var(--badge-color);
+                    }
+                    .badge-icon {
+                        color: var(--badge-color);
+                        width: 20px;
+                        height: 20px;
+                        min-width: 20px;
+                        min-height: 20px;
+                        flex-shrink: 0;
+                    }
+                </style>
+                <div class="badge inline-block px-4 py-2 rounded-full font-medium">Development</div>
+                <h3 class="text-2xl md:text-3xl font-bold">Developer Experience</h3>
+                <p class="text-lg text-gray-600">Enjoy a seamless development experience with hot reload, component-based architecture, and clean, maintainable code.</p>
+                <ul class="space-y-4">
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Component system</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Easy customization</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Clean code</span>
+                    </li>
+                    
+                    <li class="flex items-start space-x-3">
+                        <svg class="badge-icon mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Detailed documentation</span>
+                    </li>
+                    
+                </ul>
+                <a href="/features/developer-experience/" class="btn-primary inline-block">Learn More</a>
+            </div>
+
+            
+            <div>
+                <img src="/images/feature-3.svg" alt="Developer Experience" class="rounded-xl shadow-elevation">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+            </div>
+        </div>
+    </section>
 
 
 <section class="section" style="background-color:#f1f5f9;">
@@ -858,7 +924,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="flex items-center space-x-3 mb-4">
                     <a href="/" class="inline-block">
                         
-                            <img src="/images/Logo%e7%9f%a2%e9%87%8f%e5%9b%be-2.svg" alt="CAREER ACCELERATOR" class="h-6">
+                            <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-6">
                         
                     </a>
                     <span class="text-xl font-bold text-gray-900">CAREER ACCELERATOR</span>

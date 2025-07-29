@@ -73,7 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         
     
-    <link rel="stylesheet" href="/css/main.min.f7996656a79207141a6d93f3ee3092d138df5ff00a32b8db62215a3c76555c6d.css">
+    <link rel="stylesheet" href="/css/main.min.3b11e5567b646b2237425256a706667b766b5f1d256761466d86be35864ccd68.css">
 
     
     
@@ -97,10 +97,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 <a href="/" class="flex items-center space-x-4">
                     
-                        <img src="/images/Logo%e7%9f%a2%e9%87%8f%e5%9b%be-2.svg" alt="CAREER ACCELERATOR" class="h-12">
+                        <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-12">
                     
                     
-                        <span class="text-3xl font-semibold text-gray-800">CAREER ACCELERATOR</span>
+                        <span class="text-xl font-semibold text-gray-800">CAREER ACCELERATOR</span>
                     
                 </a>
 
@@ -129,57 +129,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
 
                 
-                <div class="md:hidden">
-                    <label for="nav-toggle" class="p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 transition-colors cursor-pointer">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </label>
-                </div>
+                <label for="nav-toggle" class="md:hidden flex flex-col cursor-pointer">
+                    <span class="w-6 h-0.5 bg-gray-900 mb-1"></span>
+                    <span class="w-6 h-0.5 bg-gray-900 mb-1"></span>
+                    <span class="w-6 h-0.5 bg-gray-900"></span>
+                </label>
             </nav>
         </div>
+    </header>
 
-        
-        <div class="nav-content md:hidden w-full fixed left-0 right-0 top-20 bg-white border-t border-gray-100 shadow-lg">
-            <div class="w-full px-6 py-4">
+    
+    <div class="mobile-menu fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex flex-col h-full">
+            <div class="flex items-center justify-between p-4 border-b border-gray-200">
+                <a href="/" class="flex items-center space-x-2">
+                    
+                        <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-8">
+                    
+                </a>
+                <label for="nav-toggle" class="cursor-pointer">
+                    <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="flex-1 py-6 overflow-y-auto">
                 
                     
-                    <a href="/careers" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Coaching</a>
+                    <a href="/careers" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Coaching</a>
                     
                 
                     
-                    <a href="/event" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Events</a>
+                    <a href="/event" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Events</a>
                     
                 
                     
-                    <a href="/community" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Community</a>
+                    <a href="/community" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Community</a>
                     
                 
                     
-                    <a href="/contact" class="block text-xl text-gray-900 hover:text-primary-600 font-bold transition duration-200 py-2">Contact us</a>
+                    <a href="/contact" class="block px-4 py-3 text-lg text-gray-900 hover:bg-gray-50">Contact us</a>
                     
-                
                 
                 
             </div>
         </div>
-    </header>
-
-    <style>
-        .mobile-menu-wrapper {
-            position: relative;
-        }
-        .nav-toggle {
-            display: none;
-        }
-        .nav-content {
-            display: none;
-        }
-        .nav-toggle:checked ~ header .nav-content {
-            display: block;
-        }
-    </style>
+    </div>
 </div>
+
+<style>
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ .mobile-menu {
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-wrapper {
+        display: block;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+</style>
 
     </div>
 
@@ -195,7 +210,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <span class="block text-2xl md:text-3xl text-black font-normal mt-2">Join Our Community</span>
         </h1>
         <p class="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-          与数万名求职者一起成长，分享经验，互相支持，共同实现职业梦想
+          链接全球华人自由顾问，构建你的专属咨询“专家网络库
         </p>
       </div>
       
@@ -212,23 +227,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">社区特色和加入我们</h2>
-        <p class="text-lg text-black max-w-4xl mx-auto leading-relaxed mb-12">在这里，自由不等于孤立——我们用咨询人的专业精神重构自由职业生态，让每个独立思考的顾问，都能成为全球商业变革的支点。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">自由顾问社区宣言</h2>
+        <p class="text-lg text-black max-w-4xl mx-auto leading-relaxed mb-12">在这里，自由不等于孤立——我们用咨询人的专业精神重构自由职业生态，让每个独立思考的顾问，都能成为全球商业变革的支点</p>
         
         
-        <div class="max-w-3xl mx-auto">
-          
-          <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 mb-6 border border-blue-100">
-            <div class="flex items-center justify-center">
-              <div class="text-4xl mr-6 bg-white rounded-full p-4 shadow-md">🌟</div>
-              <div class="text-center">
-                <h3 class="text-2xl font-bold text-black mb-3">社区特色</h3>
-                <p class="text-lg text-black leading-relaxed">无论是短期项目、特殊技能需求，还是寻求外部视角，都能在这里快速找到对的人。</p>
-              </div>
-            </div>
-          </div>
-          
+        <div class="text-center mb-12">
+          <h3 class="text-3xl md:text-4xl font-bold text-black mb-4">社区特色</h3>
+          <p class="text-lg text-black max-w-4xl mx-auto leading-relaxed">无论是短期项目、特殊技能需求，还是寻求外部视角，都能在这里快速找到对的人。</p>
         </div>
+        
+        
         
       </div>
       
@@ -313,37 +321,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
       </div>
     </div>
-  </section>  
-  <section class="py-16 bg-gradient-to-br from-blue-100 to-indigo-200">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-12">        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">社区规则</h2>
-        <p class="text-lg text-black">共同维护良好的社区环境</p>
-      </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-        
-        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-3">❤️</div>          <h3 class="font-bold text-black mb-2">友善互助</h3>
-          <p class="text-sm text-black leading-relaxed">保持友善态度，积极帮助他人，营造良好社区氛围</p>
-        </div>
-        
-        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-3">✅</div>          <h3 class="font-bold text-black mb-2">真实分享</h3>
-          <p class="text-sm text-black leading-relaxed">分享真实经历和经验，不发布虚假信息</p>
-        </div>
-        
-        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-3">🔒</div>          <h3 class="font-bold text-black mb-2">尊重隐私</h3>
-          <p class="text-sm text-black leading-relaxed">尊重他人隐私，不泄露个人敏感信息</p>
-        </div>
-        
-        <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
-          <div class="text-3xl mb-3">🚫</div>          <h3 class="font-bold text-black mb-2">禁止广告</h3>
-          <p class="text-sm text-black leading-relaxed">禁止发布无关广告和spam信息，保持讨论质量</p>
-        </div>
-        
-      </div>
-    </div>
   </section>
 
 <style>
@@ -369,7 +346,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="flex items-center space-x-3 mb-4">
                     <a href="/" class="inline-block">
                         
-                            <img src="/images/Logo%e7%9f%a2%e9%87%8f%e5%9b%be-2.svg" alt="CAREER ACCELERATOR" class="h-6">
+                            <img src="/images/LOGO_Revised1.png" alt="CAREER ACCELERATOR" class="h-6">
                         
                     </a>
                     <span class="text-xl font-bold text-gray-900">CAREER ACCELERATOR</span>
