@@ -73,7 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
         
     
-    <link rel="stylesheet" href="/css/main.min.3b11e5567b646b2237425256a706667b766b5f1d256761466d86be35864ccd68.css">
+    <link rel="stylesheet" href="/css/main.min.151723d5f6c6534eaef0fd637d57beb6deb993f0ed5c601a562c991a9ffe1b53.css">
 
     
     
@@ -281,6 +281,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </section>
 
   
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">注册会员画像</h2>
+        <p class="text-lg text-gray-600 mb-2">数据洞察我们的社区构成</p>
+        <p class="text-black max-w-4xl mx-auto">基于真实数据，了解我们社区成员的专业背景、行业分布和技能特长</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+          <div class="text-center mb-4">
+            <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+              <img src="/images/%e7%94%a8%e6%88%b7%e7%94%bb%e5%83%8f1.png" alt="专业背景分布" class="w-full h-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-105 longpress-image" data-title="专业背景分布">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center pointer-events-none">
+                <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm bg-black bg-opacity-70 px-3 py-1 rounded-full backdrop-blur-sm">长按放大查看</span>
+              </div>
+            </div>
+            <div class="mt-4"></div>
+            <h3 class="text-xl font-bold text-black mb-2">专业背景分布</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">涵盖战略咨询、运营优化、数字化转型等多个专业领域</p>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+          <div class="text-center mb-4">
+            <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+              <img src="/images/%e7%94%a8%e6%88%b7%e7%94%bb%e5%83%8f2.png" alt="行业经验构成" class="w-full h-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-105 longpress-image" data-title="行业经验构成">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center pointer-events-none">
+                <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm bg-black bg-opacity-70 px-3 py-1 rounded-full backdrop-blur-sm">长按放大查看</span>
+              </div>
+            </div>
+            <div class="mt-4"></div>
+            <h3 class="text-xl font-bold text-black mb-2">行业经验构成</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">汇聚金融、科技、制造、医疗等各行业顶尖人才</p>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+          <div class="text-center mb-4">
+            <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+              <img src="/images/%e7%94%a8%e6%88%b7%e7%94%bb%e5%83%8f3.png" alt="服务能力矩阵" class="w-full h-auto rounded-lg shadow-md transition-transform duration-300 hover:scale-105 longpress-image" data-title="服务能力矩阵">
+              <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-lg flex items-center justify-center pointer-events-none">
+                <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm bg-black bg-opacity-70 px-3 py-1 rounded-full backdrop-blur-sm">长按放大查看</span>
+              </div>
+            </div>
+            <div class="mt-4"></div>
+            <h3 class="text-xl font-bold text-black mb-2">服务能力矩阵</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">从项目管理到专业咨询，满足不同层次的业务需求</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+  
   <section class="py-16 bg-gradient-to-br from-indigo-50 to-blue-100">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">        <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">真实反馈</h2>
@@ -333,7 +392,274 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .border-indigo-100 { border-color: #e0e7ff; }
 .border-blue-200 { border-color: #bfdbfe; }
 .border-indigo-200 { border-color: #c7d2fe; }
+
+ 
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.image-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.image-modal.active img {
+  transform: scale(1);
+}
+
+.image-modal .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.image-modal .close-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-modal .image-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+ 
+.longpress-progress {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8) !important;
+  border-radius: 0 0 8px 8px !important;
+  transform-origin: left !important;
+  transform: scaleX(0) !important;
+  transition: transform 0.1s ease !important;
+  z-index: 10 !important;
+}
+
+ 
+.longpress-image {
+  position: relative;
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM loaded, initializing longpress functionality');
+  
+  let activeElement = null;
+  let longPressTimer = null;
+  let progressTimer = null;
+  const longPressDuration = 600; 
+  
+  
+  const modal = document.createElement('div');
+  modal.className = 'image-modal';
+  modal.innerHTML = `
+    <div class="close-btn">&times;</div>
+    <img src="" alt="">
+    <div class="image-title"></div>
+  `;
+  document.body.appendChild(modal);
+  console.log('Modal created');
+  
+  
+  const images = document.querySelectorAll('.longpress-image');
+  console.log('Found images:', images.length);
+  
+  images.forEach((img, index) => {
+    console.log('Setting up image', index, img.src);
+    let progressBar = null;
+    
+    
+    const createProgressBar = () => {
+      if (progressBar) removeProgressBar();
+      progressBar = document.createElement('div');
+      progressBar.className = 'longpress-progress';
+      progressBar.style.cssText = `
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        border-radius: 0 0 8px 8px;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.1s ease;
+        z-index: 10;
+      `;
+      const container = img.closest('.relative');
+      if (container) {
+        container.appendChild(progressBar);
+        console.log('Progress bar created');
+      }
+    };
+    
+    
+    const removeProgressBar = () => {
+      if (progressBar && progressBar.parentNode) {
+        progressBar.parentNode.removeChild(progressBar);
+        progressBar = null;
+        console.log('Progress bar removed');
+      }
+    };
+    
+    
+    const startLongPress = (e) => {
+      console.log('Long press started');
+      e.preventDefault();
+      e.stopPropagation();
+      
+      activeElement = img;
+      createProgressBar();
+      
+      let progress = 0;
+      const progressStep = 100 / (longPressDuration / 50); 
+      
+      progressTimer = setInterval(() => {
+        progress += progressStep;
+        if (progressBar) {
+          const scaleX = Math.min(progress / 100, 1);
+          progressBar.style.transform = `scaleX(${scaleX})`;
+        }
+        
+        if (progress >= 100) {
+          clearInterval(progressTimer);
+        }
+      }, 50);
+      
+      longPressTimer = setTimeout(() => {
+        console.log('Long press completed, opening modal');
+        
+        
+        clearInterval(progressTimer);
+        removeProgressBar();
+        
+        
+        const modalImg = modal.querySelector('img');
+        const modalTitle = modal.querySelector('.image-title');
+        
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modalTitle.textContent = img.getAttribute('data-title') || img.alt;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        activeElement = null;
+      }, longPressDuration);
+    };
+    
+    
+    const endLongPress = (e) => {
+      console.log('Long press ended');
+      if (longPressTimer) {
+        clearTimeout(longPressTimer);
+        longPressTimer = null;
+      }
+      if (progressTimer) {
+        clearInterval(progressTimer);
+        progressTimer = null;
+      }
+      removeProgressBar();
+      activeElement = null;
+    };
+    
+    
+    img.style.userSelect = 'none';
+    img.style.webkitUserSelect = 'none';
+    img.style.mozUserSelect = 'none';
+    img.style.msUserSelect = 'none';
+    
+    
+    img.addEventListener('mousedown', startLongPress, { passive: false });
+    img.addEventListener('mouseup', endLongPress);
+    img.addEventListener('mouseleave', endLongPress);
+    img.addEventListener('contextmenu', (e) => e.preventDefault()); 
+    
+    
+    img.addEventListener('touchstart', startLongPress, { passive: false });
+    img.addEventListener('touchend', endLongPress);
+    img.addEventListener('touchcancel', endLongPress);
+    img.addEventListener('touchmove', endLongPress); 
+    
+    
+    img.addEventListener('mouseenter', () => {
+      img.style.cursor = 'pointer';
+    });
+  });
+  
+  
+  const closeModal = () => {
+    console.log('Closing modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+  
+  
+  modal.querySelector('.close-btn').addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
+  
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+  
+  console.log('Longpress setup complete');
+});
+</script>
 
     </div>
 

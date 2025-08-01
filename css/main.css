@@ -2914,6 +2914,9 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .visible {
   visibility: visible;
 }
@@ -3613,6 +3616,9 @@ h1, h2, h3, h4, h5, h6 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
+.bg-opacity-0 {
+  --tw-bg-opacity: 0;
+}
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
@@ -3621,6 +3627,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -4152,6 +4161,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .transition-colors {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -5697,6 +5711,9 @@ h1, h2, h3, h4, h5, h6 {
 .group:hover .group-hover\:bg-primary-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(221 227 249 / var(--tw-bg-opacity, 1));
+}
+.group:hover .group-hover\:bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
 }
 .group:hover .group-hover\:text-primary-600 {
   --tw-text-opacity: 1;
